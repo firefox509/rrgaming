@@ -183,7 +183,7 @@
                             <h1>Your Home for Gaming on Campus</h1>
                             <h3>eSports at UTSA</h3>
                         </hgroup>
-                        <button class="btn btn-hero btn-lg" role="button">Learn More</button>
+                        <button class="btn btn-hero btn-lg" role="button"i data-href="#about">Learn More</button>
                     </div>
                 </div>
             </div>
@@ -410,7 +410,7 @@
     
     
 	<script type="text/javascript">
-	
+	$(function(){
 	$('a[href^="#"]').on('click', function(event) {
     	var target = $(this.getAttribute('href'));
     	if( target.length ) {
@@ -419,6 +419,17 @@
             	scrollTop: target.offset().top
         	}, 1000);
     	}
+	});
+
+	$('button[data-href]').on('click', function(event) {
+		var target = $(this.getAttribute('data-href));
+		if( target.length ) {
+			event.preventDefault();
+			$('html, body').stop().animate({
+				scrollTop: target.offset().top - 90
+				}, 1000);
+			}
+		});
 	});
 
 	</script>
