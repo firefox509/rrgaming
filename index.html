@@ -422,7 +422,7 @@
 	});
 
 	$('button[data-href]').on('click', function(event) {
-		var target = $(this.getAttribute('data-href));
+		var target = $(this.getAttribute('data-href'));
 		if( target.length ) {
 			event.preventDefault();
 			$('html, body').stop().animate({
