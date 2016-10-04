@@ -186,7 +186,7 @@
                             <h1>Your Home for Gaming on Campus</h1>
                             <h3>eSports at UTSA</h3>
                         </hgroup>
-                        <button class="btn btn-hero btn-lg" role="button"i data-href="#about">Learn More</button>
+                        <button class="btn btn-hero btn-lg" role="button" data-href="#about">Learn More</button>
                     </div>
                 </div>
             </div>
@@ -197,10 +197,10 @@
                 <div class="fill" style="background-image:url('images/slide2.jpg');">
                     <div class="hero">
                         <hgroup>
-                            <h1>It's time to play some Blade & Soul!</h1>
+                            <h1>Tournaments!</h1>
                             <h3></h3>
                         </hgroup>
-		<!--	<button class="btn btn-hero btn-lg" role="button">Download here</button> -->
+			<button class="btn btn-hero btn-lg" role="button" data-href="#portfolio">Find out more!</button>
                     </div>
                 </div>
             </div>
@@ -210,10 +210,10 @@
                 <div class="fill" style="background-image:url('images/slide3.jpg');">
                     <div class="hero">
                         <hgroup>
-                            <h1>We're not kidding.</h1>
+                            <h1>Casual Events and Get-togethers</h1>
                             <h3></h3>
                         </hgroup>
-		<!--	<button class="btn btn-hero btn-lg" role="button">Download Blade and Soul</button> -->
+			<button class="btn btn-hero btn-lg" role="button" data-href="#subscribe">Join us!</button>
                     </div>
                 </div>
             </div>
@@ -429,7 +429,7 @@
     	if( target.length ) {
        		event.preventDefault();
         	$('html, body').stop().animate({
-            	scrollTop: target.offset().top
+            	scrollTop: target.offset().top - 80
         	}, 1000);
     	}
 	});
@@ -439,7 +439,7 @@
 		if( target.length ) {
 			event.preventDefault();
 			$('html, body').stop().animate({
-				scrollTop: target.offset().top - 90
+				scrollTop: target.offset().top - 80
 				}, 1000);
 			}
 		});
